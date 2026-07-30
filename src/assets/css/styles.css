@@ -1,0 +1,105 @@
+/* Meridian Freight portal — global styles. Bootstrap 4 does the heavy lifting. */
+body {
+  font-family: -apple-system, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  background-color: #f4f6f8;
+  color: #23303d;
+}
+
+.mrd-header {
+  background-color: #0f2b46;
+  color: #fff;
+}
+.mrd-header .navbar-brand {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.mrd-sidebar {
+  background-color: #fff;
+  border-right: 1px solid #e2e7ec;
+  min-height: calc(100vh - 56px);
+}
+.mrd-sidebar .nav-link {
+  color: #33475b;
+  padding: 0.5rem 1rem;
+}
+.mrd-sidebar .nav-link.active {
+  color: #0f2b46;
+  background-color: #eef3f8;
+  font-weight: 600;
+}
+.mrd-sidebar .mrd-menu-group {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8595a5;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.mrd-page-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.mrd-breadcrumb {
+  font-size: 0.8rem;
+  color: #8595a5;
+}
+
+.mrd-card {
+  background-color: #fff;
+  border: 1px solid #e2e7ec;
+  border-radius: 4px;
+}
+
+.mrd-form-label {
+  font-size: 0.875rem;
+  color: #4a5a6a;
+  text-align: right;
+  padding-top: 0.4rem;
+}
+.mrd-form-label.required::before {
+  content: '*';
+  color: #d0342c;
+  margin-right: 2px;
+}
+
+.mrd-table th {
+  background-color: #eef3f8;
+  font-size: 0.82rem;
+  color: #33475b;
+  white-space: nowrap;
+  border-top: none;
+}
+.mrd-table td {
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+.mrd-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.mrd-sort-indicator {
+  color: #a3b1c2;
+  font-size: 0.75rem;
+}
+.mrd-sort-indicator.active {
+  color: #33475b;
+}
+
+.mrd-amount {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.mrd-error-text {
+  color: #d0342c;
+  font-size: 0.78rem;
+  display: block;
+  margin-top: 0.15rem;
+}
+
+.mrd-row-invalid {
+  background-color: #fdf3f2;
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "logistics",
+    "name": "託運管理",
+    "children": [
+      {
+        "id": "shipmentQuery",
+        "name": "託運查詢",
+        "children": [
+          { "id": "shipmentInquiry", "name": "託運單查詢" },
+          { "id": "batchShipmentImport", "name": "批次託運匯入" }
+        ]
+      }
+    ]
+  }
+]

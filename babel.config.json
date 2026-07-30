@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "useBuiltIns": "entry", "corejs": 3 }],
+    ["@babel/preset-react", { "runtime": "classic" }]
+  ],
+  "plugins": [
+    "jsx-control-statements",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-runtime"
+  ],
+  "env": {
+    "hmr": {
+      "plugins": [["react-refresh/babel", { "skipEnvCheck": true }]]
+    }
+  }
+}

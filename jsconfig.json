@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2017",
+    "jsx": "react",
+    "paths": {
+      "ActionTypes": ["src/constants/actionTypes.js"],
+      "Assets/*": ["src/assets/*"],
+      "Components/*": ["src/components/*"],
+      "Constants/*": ["src/containers/*"],
+      "Hooks/*": ["src/hooks/*"],
+      "Pages/*": ["src/pages/*"],
+      "Redux/*": ["src/redux/*"],
+      "Routes/*": ["src/routes/*"],
+      "Util/*": ["src/util/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

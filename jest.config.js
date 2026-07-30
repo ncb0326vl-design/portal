@@ -1,0 +1,26 @@
+module.exports = {
+  rootDir: 'src',
+  testRegex: '(test|spec)\\.[jt]sx?$',
+  setupFilesAfterEach: ['<rootDir>/__tests__/setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/__tests__/setup.js'],
+  globals: {
+    API_HOST: 'http://localhost:3000/api',
+    IS_DEV_ENV: true,
+    IS_PROD_ENV: false,
+    USE_CONSOLE: true,
+    RESTORE_DEV_SESSION: false,
+  },
+  moduleNameMapper: {
+    '^ActionTypes$': '<rootDir>/constants/actionTypes.js',
+    '^Assets/(.*)$': '<rootDir>/assets/$1',
+    '^Components/(.*)$': '<rootDir>/components/$1',
+    '^Constants/(.*)$': '<rootDir>/constants/$1',
+    '^Hooks/(.*)$': '<rootDir>/hooks/$1',
+    '^Pages/(.*)$': '<rootDir>/pages/$1',
+    '^Redux/(.*)$': '<rootDir>/redux/$1',
+    '^Routes/(.*)$': '<rootDir>/routes/$1',
+    '^Util/(.*)$': '<rootDir>/util/$1',
+    '^JestUtil/(.*)$': '<rootDir>/__tests__/utils/$1',
+    '\\.(css|scss)$': '<rootDir>/__tests__/utils/styleMock.js',
+  },
+}
